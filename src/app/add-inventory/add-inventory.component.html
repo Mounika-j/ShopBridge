@@ -1,0 +1,43 @@
+<form>
+    <h3 class="head-text">{{this.data.isEditEnable ? 'Edit Inventory': 'Add Inventory'}}</h3>
+    <div *ngIf="enableErrorMesage" class="error-message">
+        <span>{{errorMessage}}</span>
+    </div>
+    <div class="search-details-wrap ">
+        <span class="search-label">Name <span class="manditory-cls">*</span></span>
+        <mat-form-field appearance="none" class="input-field">
+            <input name='name' type="text" [ngModelOptions]="{standalone: true}" [(ngModel)]="itemNameVal" matInput placeholder="Enter other here…" required>
+        </mat-form-field>
+    </div>
+
+    <div class="search-details-wrap ">
+        <span class="search-label">Description<span class="manditory-cls">*</span></span>
+        <mat-form-field appearance="none" class="input-field">
+            <input name='description' type="text" [ngModelOptions]="{standalone: true}" maxlength='100' [(ngModel)]="descriptionVal" matInput placeholder="Enter other here…" required>
+        </mat-form-field>
+    </div>
+
+    <div class="search-details-wrap ">
+        <span class="search-label">Price <span class="manditory-cls">*</span></span>
+        <mat-form-field appearance="none" class="input-field">
+            <input name='price' type="number" [ngModelOptions]="{standalone: true}" [(ngModel)]="priceVal" matInput placeholder="Enter other here…" required>
+        </mat-form-field>
+    </div>
+
+    <div class="search-details-wrap ">
+        <span class="search-label">Quality</span>
+        <mat-form-field appearance="none" class="input-field">
+            <input name='quality' type="number" [ngModelOptions]="{standalone: true}" [(ngModel)]="qualityVal" matInput placeholder="Enter other here…" required>
+        </mat-form-field>
+    </div>
+
+    <div class="search-details-wrap ">
+        <span class="search-label">ItemsLeft </span>
+        <mat-form-field appearance="none" class="input-field">
+            <input name='itemsleft' type="number" [ngModelOptions]="{standalone: true}" [(ngModel)]="itemsLeftVal" matInput placeholder="Enter other here…">
+        </mat-form-field>
+    </div>
+    <div class="d-flex justify-content-end">
+        <button class="custom-btn" type="button" (click)='saveInventory()'> Save</button>
+    </div>
+</form>

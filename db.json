@@ -1,0 +1,36 @@
+{
+  "inventoryData": [
+    {
+      "id": 1,
+      "itemName": "Roche",
+      "description": "safdsgfd csdfdsfdsf",
+      "price": 85,
+      "quality": 6,
+      "itemsLeft": 96,
+      "headers": {
+        "normalizedNames": {},
+        "lazyUpdate": null
+      }
+    },
+    {
+      "id": 3,
+      "itemName": "wall Hooks Hangers",
+      "description": "Used for crafts ",
+      "price": 56,
+      "quality": 1,
+      "itemsLeft": 2,
+      "headers": {
+        "normalizedNames": {},
+        "lazyUpdate": null
+      }
+    },
+    {
+      "id": 4,
+      "itemName": "flowers",
+      "description": "Artifical",
+      "price": 89,
+      "quality": 2,
+      "itemsLeft": 9
+    }
+  ]
+}
